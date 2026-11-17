@@ -1,0 +1,107 @@
+body {  
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;                       /*this is the styling for the beige-ish background */
+    padding: 0;
+    height: 100vh;
+    background:#c5b892;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /*Everything is aligned to the center of the page */
+}
+.container {
+    width: 370px;
+    background-color:rgb(118, 78, 78);
+    padding: 20px;    /*this container is the pink/maroon box in the middle. It's supposed to contain our data values*/
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px #342c2c;
+}
+.multi-select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;     /*this is the white select bar on the top of the container. From here we can select whatever choice we would like*/
+    padding: 10px 8px 10px 8px;
+    background: whitesmoke;
+    position: relative;
+    cursor:cell;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;     /* This is what the dropdown menu should actually look like. since it doesn't work, i'll assume it does*/
+    background: whitesmoke;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+}
+.multi-select.active .dropdown {
+    display: block;
+}
+.dropdown div {
+    padding: 10px; 
+    cursor: cell;
+}
+.dropdown div:hover {
+    background: #f0f0f0;
+}
+.selected-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;           /*this is how the selected items should look like*/
+    min-height: 30px;
+    width: 100%;
+}
+.selected-items span {
+    background: #aaa; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;   /* */
+    font-size: 14px;
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+.selected-items span i {
+    cursor: cell;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.multi-select.active .dropdown-arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* I have a bug somewhere because the changes aren't applying. I'll debug tomorrow. For now let's finish
+the coding for today*/

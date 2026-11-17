@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <link rel="stylesheet"href="Multiselect.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="multi-select" id="multiSelect" ></div> <!--create a class for our multiselect dropdown-->
+                <div class="selected -items" id="selectedItems"></div> <!--make space for selected items-->
+                <div class="dropdown-arrow">&#9662</div> <!--an arrow buttom to show the options for the vendor, customer, etc-->
+                <div class="dropdown" id="dropdown"></div> <!--its also a simple dropdown-->
+                    <div data-value="Customer">Customer</div> <!--Our data values-->
+                    <div data-value="Vendor">Vendor</div>
+                    <div data-value="Admin">Admin</div>
+        </div>
+        <div class="out-box"></div>
+        <button id="showBtn">Submit</button>
+        <div id="output">selected items...</div>
+
+    <script src="Multiselect.js"></script>
+    </body>
+</html>
+
