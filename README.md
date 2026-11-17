@@ -10,4 +10,4 @@ This project comprises:
 
 ##Use Cases
 -Any frontend that needs a multiselect dropdown. 
--Mainly built for $ahara. 
+-Mainly built for my own project (but if it's helpful for you, give it a go).
